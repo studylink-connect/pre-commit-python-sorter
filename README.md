@@ -11,14 +11,24 @@ imports for you (or show you how it should be done).
 * [pre-commit](https://github.com/pre-commit)
 * [isort](https://github.com/timothycrosley/isort)
 
+## Usage
 
 Add this to your ``.pre-commit-config.yaml`` file
 
-    - repo: git://github.com/FalconSocial/pre-commit-python-sorter
+    - repo: https://github.com/studylink-connect/pre-commit-python-sorter
       sha: 1.0.4
       hooks:
       - id: python-import-sorter
         args: ['--silent-overwrite']
+
+or with Docker:
+
+    - repo: https://github.com/studylink-connect/pre-commit-python-sorter
+      sha: 1.0.4
+      hooks:
+      - id: docker-python-import-sorter
+        args: ['--silent-overwrite']
+    
 
 Available flags:
 
